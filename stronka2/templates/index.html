@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Name's Portfolio</title>
+</head>
+<body>
+    <h1>Your Name's Portfolio</h1>
+
+    <!-- Form to add a new project -->
+    <h2>Add New Project</h2>
+    <form action="/api/add_project" method="POST">
+        <label for="project_name">Project Name:</label>
+        <input type="text" id="project_name" name="project_name" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="technologies">Technologies:</label>
+        <input type="text" id="technologies" name="technologies" required>
+        
+        <label for="project_link">Project Link:</label>
+        <input type="text" id="project_link" name="project_link">
+        
+        <label for="repository_link">Repository Link:</label>
+        <input type="text" id="repository_link" name="repository_link">
+
+        <input type="submit" value="Add Project">
+    </form>
+
+    <!-- Display your projects here -->
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
