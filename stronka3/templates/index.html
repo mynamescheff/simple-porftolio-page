@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form id="signup-form" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="20" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" maxlength="40" required>
+
+        <label for="pin_number">PIN Number:</label>
+        <input type="text" id="pin_number" name="pin_number" minlength="4" maxlength="5" required>
+
+        <label for="character_deletion_number">Character Deletion Number:</label>
+        <input type="text" id="character_deletion_number" name="character_deletion_number" maxlength="7" required>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <!-- Display error message here -->
+    <div id="error-message" style="color: red;"></div>
+
+    <!-- Display confirmation message here -->
+    <div id="confirmation-message" style="display: none;">
+        <h2>Signup Successful</h2>
+        <p>Thank you for signing up! Your account has been created successfully.</p>
+        <!-- "Back to Sign Up" button to return to the signup form -->
+        <button id="back-to-signup-btn">Back to Sign Up</button>
+    </div>
+
+    <!-- Text below the password form -->
+    <p id="password-length-message" style="color: red; display: none;">Password must be at least 6 characters long.</p>
+
+    <!-- Add the script.js file -->
+    <script src="static/script.js"></script>
+</body>
+</html>
