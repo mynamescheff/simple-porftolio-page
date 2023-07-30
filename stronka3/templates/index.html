@@ -5,18 +5,18 @@
 </head>
 <body>
     <h1>Signup</h1>
-    <form id="signup-form" method="POST">
+    <form action="/api/signup" method="POST">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" maxlength="20" required>
+        <input type="text" id="username" name="username" maxlength="20" required autocomplete="off">
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" maxlength="40" required>
+        <input type="password" id="password" name="password" maxlength="40" required autocomplete="off">
 
         <label for="pin_number">PIN Number:</label>
-        <input type="text" id="pin_number" name="pin_number" minlength="4" maxlength="5" required>
+        <input type="text" id="pin_number" name="pin_number" minlength="4" maxlength="5" required autocomplete="off">
 
         <label for="character_deletion_number">Character Deletion Number:</label>
-        <input type="text" id="character_deletion_number" name="character_deletion_number" maxlength="7" required>
+        <input type="text" id="character_deletion_number" name="character_deletion_number" maxlength="7" required autocomplete="off">
 
         <input type="submit" value="Sign Up">
     </form>
